@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kanban</title>
+</head>
+<body>
+    <main class="kanban">
+        <!-- Column 1 -->
+        <div class="kanban-column" data-id="1">
+            <div class="kanban-title">
+                <h2>
+                    To Do
+                </h2>
+
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <form class="add-card-form" style="display: none;">
+                <input type="text" name="card-title" placeholder="Enter card title" required>
+                <select name="priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit">Add Card</button>
+                <button type="button" class="cancel-add-card">Cancel</button>
+            </form>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge medium">
+                        <span>
+                            Medium Priority
+                        </span>
+                    </div>
+
+                    <p class="card-title">
+                        Anexar documentos
+                    </p>
+
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">0</i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">0</i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src\images\avatar5.png" alt="Avatar">
+                        </div>
+                    </div>
+                    <button class="delete-card">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="kanban-column" data-id="2">
+            <div class="kanban-title">
+                <h2>
+                    In Progress
+                </h2>
+
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <form class="add-card-form" style="display: none;">
+                <input type="text" name="card-title" placeholder="Enter card title" required>
+                <select name="priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit">Add Card</button>
+                <button type="button" class="cancel-add-card">Cancel</button>
+            </form>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                        <span>
+                            High Priority
+                        </span>
+                    </div>
+
+                    <p class="card-title">
+                        Verificar integridade do Banco de Dados
+                    </p>
+
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">0</i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">0</i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src\images\avatar8.png" alt="Avatar">
+                        </div>
+                    </div>
+                    <button class="delete-card">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="kanban-column" data-id="3">
+            <div class="kanban-title">
+                <h2>
+                    Awaiting Approval
+                </h2>
+
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <form class="add-card-form" style="display: none;">
+                <input type="text" name="card-title" placeholder="Enter card title" required>
+                <select name="priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit">Add Card</button>
+                <button type="button" class="cancel-add-card">Cancel</button>
+            </form>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge low">
+                        <span>
+                            Low Priority
+                        </span>
+                    </div>
+
+                    <p class="card-title">
+                        Revisar Documentos
+                    </p>
+
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">0</i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">0</i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src\images\avatar2.png" alt="Avatar">
+                        </div>
+                    </div>
+                    <button class="delete-card">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="kanban-column" data-id="4">
+            <div class="kanban-title">
+                <h2>
+                    Done
+                </h2>
+
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <form class="add-card-form" style="display: none;">
+                <input type="text" name="card-title" placeholder="Enter card title" required>
+                <select name="priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit">Add Card</button>
+                <button type="button" class="cancel-add-card">Cancel</button>
+            </form>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                        <span>
+                            High Priority
+                        </span>
+                    </div>
+
+                    <p class="card-title">
+                        Retrabalho no sistema FrontEnd
+                    </p>
+
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">0</i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">0</i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src\images\avatar1.png" alt="Avatar">
+                        </div>
+                    </div>
+                    <button class="delete-card">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
